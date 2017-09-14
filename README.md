@@ -19,7 +19,7 @@ The URL returns a collection of images in the JSON format expected by the eDocBu
       "thumbUrl": "https://farm5.staticflickr.com/4349/37036235636_39dae44b2b_t.jpg",
       "name": "37036235636_39dae44b2b_b.jpg",
       "category": "Flickr",
-      "description": "Valle del As�n"
+      "description": "Valle del Asn"
     },
 	(...)
   ],
@@ -31,6 +31,14 @@ The URL returns a collection of images in the JSON format expected by the eDocBu
   ]
 }
 
+```
+
+You can try it using the following URL: http://flickr-assetsurl.azurewebsites.net/
+
+The application will grab the last parameter and use it to query Flickr for photos, no mather what the key name is. For example, one could query for "oceans" using the following URL:
+
+```
+http://flickr-assetsurl.azurewebsites.net/?q=oceans
 ```
 
 ## Required Settings
